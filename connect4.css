@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#game {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#cc91e1, #6a6cff);
+}
+
+/* game board table */
+#board {
+  border: 5px solid black;
+  box-shadow: 14px 18px rgb(0, 0, 0);
+}
+#board td {
+  width: 70px;
+  height: 70px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+
+  box-shadow: 6px 11px rgb(0, 0, 0);
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+label {
+  font-size: 20px;
+}
+#player1,
+#player2 {
+  height: 30px;
+  font-size: 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+button {
+  height: 30px;
+  width: 50px;
+  border-radius: 20px;
+  margin: 10px;
+}
